@@ -1,0 +1,19 @@
+{
+  "name": "project3-oc",
+  "version": "1.0.0",
+  "description": "the third project of my learning path to become a web developper",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Najulex/AurelienBerthe_3_28102020.git"
+  },
+  "author": "Aurelien Berthe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Najulex/AurelienBerthe_3_28102020/issues"
+  },
+  "homepage": "https://github.com/Najulex/AurelienBerthe_3_28102020#readme"
+}
