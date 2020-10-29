@@ -1,79 +1,60 @@
-$clr-bg-form: rgb(231, 231, 231);
-$clr-shadow-form: rgb(189, 189, 189);
-$clr-primary: #9356dc;
-$clr-secondary: #ff79da;
+@import "./layouts/header";
+@import "./base/foundations";
+@import "./utils/variables";
 
-* {
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    margin: 0%;
-    padding: 0%;
-}
-
-header {
-    position: relative;
-    & .header__logo {
-        background: #fff;
-        z-index: 3;
-        position: absolute;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 70px;
-        box-shadow: 1px 0px 10px $clr-shadow-form;
-        & img {
-            width: auto;
-            height: 30px;
-        }
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & h3 {
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin: 3rem 0 0 3rem;
     }
-    & form {
-        padding-top: 70px;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        height: 50px;
-        background: $clr-bg-form;
-        padding-left: 1.8rem;
-        & label {
-            margin-right: 0.3rem;
-            display: block;
-            padding: 15px;
-        }
-        & input {
-            border: none;
-            font-size: 1.1rem;
-            font-weight: bold;
-            background: $clr-bg-form;
-        }
-    }
-    & .header__title {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        & a {
-            margin-top: 1.2rem;
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.2rem;
-            background: linear-gradient($clr-secondary, $clr-primary);
-            border-radius: 2rem;
-            padding: 1.2rem;
-            font-weight: bold;
-        }
-        height: 285px;
+    & .bloc-func {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
-        background-color: lighten($color: $clr-bg-form, $amount: 7%);
-        & h1 {
-            font-weight: bold;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-        & h2 {
-            font-size: 1.2rem;
+        padding-bottom: 5rem;
+        &__link {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.6rem;
+            width: 85%;
+            height: 85px;
+            background: lighten($color: $clr-bg, $amount: 7%);
+            border-radius: 1.4rem;
+            box-shadow: 6px 6px 5px lighten($color: $clr-bg, $amount: 2%);
+            & .link-number {
+                position: absolute;
+                left: 0;
+                margin-left: -0.7rem;
+                background-color: $clr-primary;
+                text-align: center;
+                padding: 0.1rem;
+                color: #fff;
+                width: 1.2rem;
+                border-radius: 2rem;
+            }
+            & .link-txt {
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                width: 70%;
+                padding-left: 1rem;
+            }
+            & .link-txt__icon {
+                width: 10%;
+            }
+            & .fa-mobile-alt,
+            .fa-list,
+            .fa-store {
+                color: darken($color: $clr-bg, $amount: 40);
+                font-size: 1.2rem;
+            }
         }
     }
 }

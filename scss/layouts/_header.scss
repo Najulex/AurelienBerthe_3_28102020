@@ -1,0 +1,65 @@
+@import "../utils/variables";
+
+header {
+    position: relative;
+    & .header__logo {
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70px;
+        box-shadow: 1px 0px 10px $clr-shadow-form;
+        & img {
+            width: auto;
+            height: 30px;
+        }
+    }
+    & form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        height: 50px;
+        background: $clr-bg;
+        padding-left: 4rem;
+        & input {
+            padding-left: 1rem;
+            height: 100%;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            background: $clr-bg;
+        }
+    }
+    & .header__title {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        & a {
+            margin-top: 1.2rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            background: linear-gradient($clr-secondary, $clr-primary);
+            border-radius: 2rem;
+            padding: 1.2rem;
+            font-weight: bold;
+        }
+        height: 285px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background-color: lighten($color: $clr-bg, $amount: 7%);
+        & h1 {
+            font-weight: bold;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        & h2 {
+            font-size: 1.2rem;
+        }
+    }
+}
