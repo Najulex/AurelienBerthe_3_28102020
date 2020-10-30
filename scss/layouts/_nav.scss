@@ -1,0 +1,64 @@
+@import "../utils/variables";
+
+nav {
+    & h3 {
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin: 3rem 0 0 1rem;
+    }
+    & .bloc-func {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5rem;
+        & :hover {
+            background: $clr-hover;
+            & .fa-mobile-alt,
+            .fa-list,
+            .fa-store {
+                color: $clr-primary;
+            }
+        }
+        &__link {
+            cursor: default;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.6rem;
+            width: 85%;
+            height: 75px;
+            background: lighten($color: $clr-bg, $amount: 7%);
+            border-radius: 1.4rem;
+            box-shadow: 6px 6px 5px lighten($color: $clr-bg, $amount: 2%);
+            & .link-number {
+                position: absolute;
+                left: 0;
+                margin-left: -0.7rem;
+                background-color: $clr-primary;
+                text-align: center;
+                padding: 0.1rem;
+                color: #fff;
+                width: 1.2rem;
+                border-radius: 2rem;
+            }
+            & .link-txt {
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                width: 70%;
+                padding-left: 1rem;
+            }
+            & .link-txt__icon {
+                width: 10%;
+            }
+            & .fa-mobile-alt,
+            .fa-list,
+            .fa-store {
+                color: darken($color: $clr-bg, $amount: 40);
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
