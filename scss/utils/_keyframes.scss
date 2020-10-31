@@ -1,3 +1,30 @@
+@keyframes ldg-spin {
+    0% {
+        transform: scale(.4);
+        opacity: 0%;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+@keyframes ldg-bg {
+    0% {
+        z-index: 4;
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    99%
+    {
+        z-index: 4;
+    }
+    100% {
+        z-index: -2;
+        opacity: 0;
+    }
+}
 @keyframes func-change {
     0% {
         transform: scaleX(0);
