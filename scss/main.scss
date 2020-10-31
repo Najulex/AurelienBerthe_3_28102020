@@ -1,77 +1,36 @@
 @import "./base/foundations";
-@import "./utils/variables";
 @import "./layouts/header";
 @import "./layouts/nav";
+@import "./layouts/sections";
 @import "./utils/mixins";
+@import "./utils/variables";
 
-#restaurants {
-    background: lighten($color: $clr-bg, $amount: 7%);
-    & h3 {
+footer {
+    height: 200px;
+    background-color: darken($color: $clr-bg, $amount: 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #FFF;
+    padding-left: 1rem;
+    margin-top: 4rem;
+    & a {
+        color: #FFF;
+        line-height: 175%;
+        text-decoration: none;
         font-weight: bold;
-        font-size: 1.6rem;
-        margin-left: 1rem;
-        padding-top: 3rem;
-        padding-bottom: 1.6rem;
+        & :hover {
+            text-decoration: underline;
+        }
     }
-    & .bloc-rest {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        & a {
-            text-decoration: none;
-        }
-        &__link {
-            box-shadow: 3px 3px 6px $clr-bg;
-            border-radius: 20px;
-            margin: auto;
-            width: 90%;
-            height: 250px;
-            margin-top: 1rem;
-            &--desc {
-                height: 30%;
-            }
-            &--palette {
-                background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-                @include img;
-                position: relative;
-                & p {
-                    @include new-patch;
-                }
-            }
-            &--note {
-                background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-                @include img;
-                position: relative;
-                & p {
-                    @include new-patch;
-                }
-            }
-            &--francaise {
-                background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-                @include img;
-            }
-            &--delice {
-                background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-                @include img;
-            }
-            &-desc {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 1rem;
-                & div p {
-                    color: black;
-                }
-                & div :nth-child(1) {
-                    font-weight: bold;
-                    font-size: 1.1rem;
-                    margin-bottom: .4rem;
-                }
-                & div .far {
-                    color: $clr-primary;
-                    font-size: 2rem;
-                }
-            }
-        }
+    & > p {
+        font-family: shrikhand;
+        font-size: 1.4rem;
+    }
+    & .footer-link {
+        text-decoration: none;
+    }
+    & .fas {
+        padding-right: 1rem;
     }
 }

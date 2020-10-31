@@ -1,4 +1,6 @@
 @import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/keyframes";
 
 nav {
     & h3 {
@@ -12,15 +14,27 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding-bottom: 5rem;
-        & :hover {
+        position: relative;
+        z-index: 0;
+        & ::after {
+            @include btn-anim;
             background: $clr-hover;
+            border-radius: 1rem;
+        }
+        & :hover {
+            & ::after {
+                animation: func-change 200ms forwards;
+                box-shadow: 3px 3px 5px darken($color: $clr-bg, $amount: 15%);
+            }
             & .fa-mobile-alt,
             .fa-list,
             .fa-store {
                 color: $clr-primary;
             }
         }
+
         &__link {
+            z-index: -1;
             cursor: default;
             position: relative;
             display: flex;

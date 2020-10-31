@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/65dcd4bcca.js" crossorigin="anonymous"></script>
     <title>Ohmyfood - Accueil</title>
 </head>
@@ -38,107 +39,103 @@
     <nav>
         <h3>Fonctionnement</h3>
         <div class="bloc-func">
-                <div class="bloc-func__link">
-                    <p class="link-number">1</p>
-                    <p class="link-txt link-txt__icon"><i class="fas fa-mobile-alt"></i></p>
-                    <p class="link-txt">Choisissez un restaurant</p>
-                </div>
-                <div class="bloc-func__link">
-                    <p class="link-number">2</p>
-                    <p class="link-txt link-txt__icon"><i class="fas fa-list"></i></p>
-                    <p class="link-txt">Composez votre menu</p>
-                </div>
-                <div class="bloc-func__link">
-                    <p class="link-number">3</p>
-                    <p class="link-txt link-txt__icon"><i class="fas fa-store"></i></p>
-                    <p class="link-txt">Dégustez au restaurant</p>
-                </div>
+            <div class="bloc-func__link">
+                <p class="link-number">1</p>
+                <p class="link-txt link-txt__icon"><i class="fas fa-mobile-alt"></i></p>
+                <p class="link-txt">Choisissez un restaurant</p>
+            </div>
+            <div class="bloc-func__link">
+                <p class="link-number">2</p>
+                <p class="link-txt link-txt__icon"><i class="fas fa-list"></i></p>
+                <p class="link-txt">Composez votre menu</p>
+            </div>
+            <div class="bloc-func__link">
+                <p class="link-number">3</p>
+                <p class="link-txt link-txt__icon"><i class="fas fa-store"></i></p>
+                <p class="link-txt">Dégustez au restaurant</p>
+            </div>
         </div>
     </nav>
 
     <!--corps du site - restaurants-->
 
-    <main id="restaurants">
+    <section id="restaurants">
         <h3>Restaurants</h3>
         <div class="bloc-rest">
-            <a href="index-1.html">
-                <div class="bloc-rest__link">
-                    <div class="bloc-rest__link--palette">
-                        <p class="new">Nouveau</p>
+            <a class="bloc-rest__link" href="index-1.html">
+                <div class="bloc-rest__link--palette">
+                    <p class="new">Nouveau</p>
+                </div>
+                <div class="bloc-rest__link-desc">
+                    <div>
+                        <p class="bloc-rest__link-desc--title">La palette du goût</p>
+                        <p>Ménilmontant</p>
                     </div>
-                    <div class="bloc-rest__link-desc">
-                        <div>
-                            <p>La palette du goût</p>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <div>
-                            <i class="far fa-heart"></i>
-                        </div>
+                    <div>
+                        <i class="far fa-heart"></i>
                     </div>
                 </div>
             </a>
-            <a href="index-2.html">
-                <div class="bloc-rest__link">
+            <a class="bloc-rest__link" href="index-2.html">
                     <div class="bloc-rest__link--note">
                         <p class="new">Nouveau</p>
                     </div>
                     <div class="bloc-rest__link-desc">
                         <div>
-                            <p>La note enchantée</p>
+                            <p class="bloc-rest__link-desc--title">La note enchantée</p>
                             <p>Charonne</p>
                         </div>
                         <div>
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
-                </div>
             </a>
-            <a href="index-3.html">
-                <div class="bloc-rest__link">
+            <a class="bloc-rest__link" href="index-3.html">
                     <div class="bloc-rest__link--francaise">
                     </div>
                     <div class="bloc-rest__link-desc">
                         <div>
-                            <p>A la française</p>
+                            <p class="bloc-rest__link-desc--title">A la française</p>
                             <p>Cité Rouge</p>
                         </div>
                         <div>
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
-                </div>
             </a>
-            <a href="index-4.html">
-                <div class="bloc-rest__link">
+            <a class="bloc-rest__link" href="index-4.html">
                     <div class="bloc-rest__link--delice">
                     </div>
                     <div class="bloc-rest__link-desc">
                         <div>
-                            <p>Le délice des sens</p>
+                            <p class="bloc-rest__link-desc--title">Le délice des sens</p>
                             <p>Folie-Méricourt</p>
                         </div>
                         <div>
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
-                </div>
             </a>
         </div>
-    </main>
+    </section>
 
     <!--pied-de-page-->
 
     <footer>
         <p>ohmyfood</p>
-        <div>
+        <div class="footer-link">
             <a href="#">
                 <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
             </a>
             <a href="#" title="Rejoignez-nous">
                 <p><i class="fas fa-handshake"></i>Devenir partenaire</p>
             </a>
-            <a href="#"><p>Mentions légales</p></a>
-            <a href="mailto:contact@ohmyfood.com" title="Contactez-nous" ><p>Contact</p></a>
+            <a href="#">
+                <p>Mentions légales</p>
+            </a>
+            <a href="mailto:contact@ohmyfood.com" title="Contactez-nous">
+                <p>Contact</p>
+            </a>
         </div>
     </footer>
 
