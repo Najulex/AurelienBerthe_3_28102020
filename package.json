@@ -4,8 +4,10 @@
   "description": "the third project of my learning path to become a web developper",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./css/style.css --style compressed"
+    "sass": "sass --watch ./scss/main.scss:./css/prefixed/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
+  "browser": "last 4 versions",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Najulex/AurelienBerthe_3_28102020.git"
