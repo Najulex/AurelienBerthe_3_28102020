@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&family=Shrikhand&display=swap"
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/65dcd4bcca.js" crossorigin="anonymous"></script>
     <title>Ohmyfood - La palette du goût</title>
@@ -16,31 +16,31 @@
     <!--en-tête-->
 
     <header>
-        <div>
+        <div class="header-menu">
             <a href="index.html">
-                <p><i class="fas fa-arrow-left"></i></p>
+                <i class="fas fa-arrow-left"></i>
             </a>
             <p>ohmyfood</p>
         </div>
-        <div>
+        <div class="bg-img">
         </div>
     </header>
 
     <!--nom du restaurant-->
 
     <main>
-        <div>
+        <div class="rest-name">
             <h1>La palette du goût</h1>
-            <p><i class="fas fa-heart"></i></p>
+            <p><i class="far fa-heart"></i></p>
         </div>
 
-        <div class="menu">
+        <div class="bloc-menu">
 
             <!--menu - entrée-->
 
-            <div class="menu__entrees">
+            <div class="menu menu__entrees">
                 <h2>ENTREES</h2>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Fricassée d'escargot</p>
                         <p>Au piment d'espelette</p>
@@ -48,11 +48,11 @@
                     <div>
                         25€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Foie gras de canard mi-cuit</p>
                         <p>Et ses copeaux de truffe noire</p>
@@ -60,11 +60,11 @@
                     <div>
                         35€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Oeuf au plat</p>
                         <p>Assaisonné à la truffe sur lit de caviar</p>
@@ -72,7 +72,7 @@
                     <div>
                         20€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
@@ -80,9 +80,9 @@
 
             <!--menu - plats-->
 
-            <div class="menu__plats">
+            <div class="menu menu__plats">
                 <h2>PLATS</h2>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Filet de boeuf aux herbes</p>
                         <p>Accompagné de sa ribambelle de légumes</p>
@@ -90,11 +90,11 @@
                     <div>
                         40€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Parmentier de queue de boeuf</p>
                         <p>A la triuffe noire sur sa purée d'ananas</p>
@@ -102,11 +102,11 @@
                     <div>
                         35€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Filet de turbot</p>
                         <p>Aux agrumes</p>
@@ -114,7 +114,7 @@
                     <div>
                         44€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
@@ -122,9 +122,9 @@
 
             <!--menu - desserts-->
 
-            <div class="menu__desserts">
+            <div class="menu menu__desserts">
                 <h2>DESSERTS</h2>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Paris-Brest</p>
                         <p>Revisité</p>
@@ -132,11 +132,11 @@
                     <div>
                         18€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Macaron au chocolat d'exception</p>
                         <p>Et glace à la vanille de Madagascar</p>
@@ -144,11 +144,11 @@
                     <div>
                         22€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
+                <div class="menu__link">
                     <div>
                         <p>Mousse au chocolat</p>
                         <p>Au piment d'espelette et à la truffe noire</p>
@@ -156,16 +156,18 @@
                     <div>
                         23€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
             </div>
 
         </div>
-        <a href="#">
-            <div>Commander</div>
-        </a>
+
+        <div class="command">
+        <a href="#">Commander</a>
+        </div>
+
     </main>
 
     <!--pied-de-page-->

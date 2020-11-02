@@ -74,12 +74,21 @@
                 &--title {
                     font-weight: bold;
                 }
-                & button {
-                    z-index: 3;
-                    border: none;
-                    background: none;
-                    & i {
-                        font-size: 1.6rem;
+                & .heart-box {
+                    position: relative;
+                    z-index: 2;
+                    & :hover + .fas {
+                        animation: heart-fulling 1s forwards;
+                        transform-origin: bottom center;
+                    }
+                    & .fa-heart {
+                        font-size: 2rem;
+                    }
+                    & .fas {
+                        z-index: -1;
+                        position: absolute;
+                        left: 0;
+                        color: #FFF;
                     }
                 }
             }

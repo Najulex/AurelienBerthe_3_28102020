@@ -1,4 +1,17 @@
-
+@keyframes heart-fulling {
+    0% {
+        transform: scale(0);
+        color: $clr-primary;
+        color: #FFF;
+    }
+    1% {
+        color: $clr-primary;
+    }
+    100% {
+        transform: scale(1);
+        color: $clr-primary;
+    }
+}
 @keyframes ldg-spin {
     0% {
         transform: scale(.4);
