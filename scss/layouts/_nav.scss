@@ -22,7 +22,7 @@ nav {
         }
         & :hover {
             & ::after {
-                animation: func-change 200ms forwards;
+                animation: func-change 100ms forwards;
                 border-radius: 1.6rem;
                 box-shadow: 3px 3px 5px darken($color: $clr-bg, $amount: 15%);
             }

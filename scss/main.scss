@@ -6,9 +6,6 @@
 @import "./utils/variables";
 @import "./layouts/footer";
 
-header {
-    z-index: -1;
-}
 .header-menu {
     height: 70px;
     display: flex;
@@ -34,7 +31,9 @@ header {
     height: 250px;
 }
 main {
-    z-index: 1;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
     margin-top: -3rem;
     border-radius: 2rem 2rem 0 0;
     background-color: $clr-bg-light;

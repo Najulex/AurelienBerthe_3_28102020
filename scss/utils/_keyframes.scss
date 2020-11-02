@@ -1,15 +1,29 @@
 @keyframes heart-fulling {
     0% {
-        transform: scale(0);
-        color: $clr-primary;
-        color: #FFF;
+        transform: scale(0);    
+        background: $clr-primary;
+        background: -webkit-linear-gradient(to left, $clr-primary, $clr-secondary);
+        background: linear-gradient(to left, $clr-primary, $clr-secondary);
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     1% {
-        color: $clr-primary;
+        background: $clr-primary;
+        background: -webkit-linear-gradient(to left, $clr-primary, $clr-secondary);
+        background: linear-gradient(to left, $clr-primary, $clr-secondary);
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     100% {
-        transform: scale(1);
-        color: $clr-primary;
+        transform: scale(1);    
+        background: $clr-primary;
+        background: -webkit-linear-gradient(to left, $clr-primary, $clr-secondary);
+        background: linear-gradient(to left, $clr-primary, $clr-secondary);
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 @keyframes ldg-spin {

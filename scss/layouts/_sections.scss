@@ -77,8 +77,9 @@
                 & .heart-box {
                     position: relative;
                     z-index: 2;
+                    cursor: pointer;
                     & :hover + .fas {
-                        animation: heart-fulling 1s forwards;
+                        animation: heart-fulling 500ms forwards;
                         transform-origin: bottom center;
                     }
                     & .fa-heart {
