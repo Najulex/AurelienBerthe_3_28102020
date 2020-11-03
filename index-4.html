@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&family=Shrikhand&display=swap"
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/65dcd4bcca.js" crossorigin="anonymous"></script>
     <title>Ohmyfood - Le délice des sens</title>
@@ -16,63 +16,67 @@
     <!--en-tête-->
 
     <header>
-        <div>
+        <div class="header-menu">
             <a href="index.html">
-                <p><i class="fas fa-arrow-left"></i></p>
+                <i class="fas fa-arrow-left"></i>
             </a>
             <p>ohmyfood</p>
         </div>
-        <div>
+        <div class="bg-img">
+            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
         </div>
     </header>
 
     <!--nom du restaurant-->
 
     <main>
-        <div>
+        <div class="rest-name">
             <h1>Le délice des sens</h1>
-            <p><i class="fas fa-heart"></i></p>
+            <div class="heart-box">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
         </div>
 
-        <div class="menu">
+        <div class="bloc-menu">
 
             <!--menu - entrée-->
 
-            <div class="menu__entrees">
+            <div class="menu menu__entrees">
                 <h2>ENTREES</h2>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Tartare de thon</p>
-                        <p>Assaisonnéau yuzu</p>
+                        <p>Assaisonné au yuzu</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         25€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Bouchée de homard croustillant</p>
                         <p>Et sa farandole de petits légumes</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         35€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Velouté de cèpes</p>
                         <p>Aux truffes</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         20€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
@@ -80,41 +84,41 @@
 
             <!--menu - plats-->
 
-            <div class="menu__plats">
+            <div class="menu menu__plats">
                 <h2>PLATS</h2>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Poulet rôti aux herbes de provence</p>
                         <p>Et sa crème de truffe</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         40€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Langouste rôtie</p>
                         <p>Et ses légumes de saison</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         35€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Côte de boeuf angus</p>
                         <p>Et sa purée de panais</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         44€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
@@ -122,50 +126,52 @@
 
             <!--menu - desserts-->
 
-            <div class="menu__desserts">
+            <div class="menu menu__desserts">
                 <h2>DESSERTS</h2>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Farandole de desserts</p>
                         <p>Du chef</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         18€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <p>Créme brulée</p>
+                <div class="menu__link">
+                    <div class="menu__link-text">
+                        <p>Crème brulée</p>
                         <p>Revisitée</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         22€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Tiramisu</p>
                         <p>A la noisette</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         23€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
             </div>
 
         </div>
-        <a href="#">
-            <div>Commander</div>
-        </a>
+
+        <div class="command">
+            <a href="#">Commander</a>
+        </div>
+
     </main>
 
     <!--pied-de-page-->

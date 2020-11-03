@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&family=Shrikhand&display=swap"
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/65dcd4bcca.js" crossorigin="anonymous"></script>
     <title>Ohmyfood - La note enchantée</title>
@@ -16,75 +16,67 @@
     <!--en-tête-->
 
     <header>
-        <div>
+        <div class="header-menu">
             <a href="index.html">
-                <p><i class="fas fa-arrow-left"></i></p>
+                <i class="fas fa-arrow-left"></i>
             </a>
             <p>ohmyfood</p>
         </div>
-        <div>
+        <div class="bg-img">
+            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
         </div>
     </header>
 
     <!--nom du restaurant-->
 
     <main>
-        <div>
+        <div class="rest-name">
             <h1>La note enchantée</h1>
-            <p><i class="fas fa-heart"></i></p>
+            <div class="heart-box">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
         </div>
 
-        <div class="menu">
+        <div class="bloc-menu">
 
             <!--menu - entrée-->
 
-            <div class="menu__entrees">
+            <div class="menu menu__entrees">
                 <h2>ENTREES</h2>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Ravioles de foie gras</p>
                         <p>Accompagnés de leur crème à la truffe</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         25€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Caviar osciètre</p>
                         <p>Sur blini à la farine de blé noir</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         35€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Homard et espuma de potiron</p>
-                        <p>Mariné au zests d'orange</p>
-                    </div>
-                    <div>
-                        20€
-                    </div>
-                    <div>
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p>Foie gras de canard cuit entier</p>
                         <p>Confiture de figue et pain toasté</p>
                     </div>
-                    <div>
-                        35€
+                    <div class="menu__link-price">
+                        20€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
@@ -92,92 +84,95 @@
 
             <!--menu - plats-->
 
-            <div class="menu__plats">
+            <div class="menu menu__plats">
                 <h2>PLATS</h2>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Noix de coquilles Saint-Jacques</p>
                         <p>Sur lit de purée de céleri-rave</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         40€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <p>Langoustine poêlée</p>
+                <div class="menu__link">
+                    <div class="menu__link-text">
+                        <p>Langoustone poêlée</p>
                         <p>Purée de patate douce</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         35€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Mijoté de queue de boeuf</p>
-                        <p>Et riz sauvage aux zests de citron</p>
+                        <p>Et riz de sauvage aux zests de citron</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         44€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
             </div>
 
+
             <!--menu - desserts-->
 
-            <div class="menu__desserts">
+            <div class="menu menu__desserts">
                 <h2>DESSERTS</h2>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Macaron noisette et chocolat</p>
                         <p>Glace au caramel brun et sel de guérande</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         18€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="menu__link">
+                    <div class="menu__link-text">
                         <p>Baba au rhum revisité</p>
                         <p>Avec son coulis de citron</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         22€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <p>Tarte au citron meringuée</p>
+                <div class="menu__link">
+                    <div class="menu__link-text">
+                        <p>Tarte au citron</p>
                         <p>Destructurée</p>
                     </div>
-                    <div>
+                    <div class="menu__link-price">
                         23€
                     </div>
-                    <div>
+                    <div class="menu__link-valid">
                         <i class="fas fa-check-circle"></i>
                     </div>
                 </div>
             </div>
 
         </div>
-        <a href="#">
-            <div>Commander</div>
-        </a>
+
+        <div class="command">
+            <a href="#">Commander</a>
+        </div>
+
     </main>
 
     <!--pied-de-page-->

@@ -1,0 +1,183 @@
+/*en-tête*/
+
+.header-menu {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+        color: black;
+        font-size: 1.2rem;
+        & i {
+            margin-left: -4.6rem;
+        }
+    }
+    & p {
+        font-family: shrikhand;
+        font-size: 1.8rem;
+    }
+}
+
+/*image de fond*/
+
+.bg-img {
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+    position: absolute;
+    z-index: -1;
+}
+
+/*menu*/
+
+main {
+    margin-top: 14rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: $clr-bg-light;
+    padding: 1rem;
+    & .rest-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .heart-box {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            & :hover + .fas {
+                animation: heart-fulling 500ms forwards;
+                transform-origin: bottom center;
+            }
+            & .fa-heart {
+                font-size: 2rem;
+            }
+            & .fas {
+                z-index: -1;
+                position: absolute;
+                left: 0;
+                color: #fff;
+            }
+        }
+        & h1 {
+            margin: 1rem;
+            margin-left: 0;
+            font-family: shrikhand;
+            font-size: 1.5rem;
+        }
+        & p {
+            font-size: 1.4rem;
+            margin-right: 1rem;
+        }
+    }
+}
+.bloc-menu {
+    & .menu {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        & h2 {
+            animation: menu-display 2s ease-out;
+            font-size: 1rem;
+            border-bottom: 2px solid $clr-tertiary;
+            padding-bottom: 0.6rem;
+            width: 40px;
+            margin-bottom: 1rem;
+        }
+        & :hover {
+            & .menu__link-price {
+                animation: price-grow 500ms alternate forwards;
+            }
+            & .menu__link-valid {
+                transform: translateX(0);
+                & i {
+                    transform: rotate(1turn);
+                    transition-duration: 500ms;
+                    transition-delay: 0.3s;
+                }
+            }
+        }
+        &__link {
+            animation: menu-display 2.5s ease-out;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            box-shadow: 3px 3px 10px $clr-shadow-form;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            & > :nth-child(2),
+            :nth-child(1) :nth-child(1) {
+                font-weight: bold;
+            }
+            & > :nth-child(1) :nth-child(1) {
+                font-size: 1.1rem;
+            }
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 1rem 0 0.5rem 1rem;
+                font-size: 0.9rem;
+                line-height: 1.4rem;
+                width: 85%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            &-price {
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0 0.5rem 0.6rem 0.5rem;
+            }
+            &-valid {
+                position: absolute;
+                width: 60px;
+                height: 100%;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $clr-tertiary;
+                border-radius: 0 1rem 1rem 0;
+                color: #fff;
+                font-size: 1.4rem;
+                transform: translateX(100%);
+                transition: transform 500ms;
+                transition-delay: 0.1s;
+            }
+        }
+    }
+}
+
+/*bouton commander*/
+
+.command {
+    margin: auto;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    opacity: 1;
+    transition: all 600ms;
+    :hover {
+        opacity: 0.8;
+    }
+    & a {
+        background: linear-gradient($clr-secondary, $clr-primary);
+        box-shadow: 5px 5px 5px $clr-shadow-form;
+        padding-top: 1.2rem;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

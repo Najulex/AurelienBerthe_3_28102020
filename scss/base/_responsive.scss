@@ -1,0 +1,143 @@
+@media all and (min-width: 426px) and (max-width: 1023px) {
+    header {
+        .header__title {
+            height: 200px;
+            & h1 {
+                font-size: 1.6rem;
+            }
+            & h2 {
+                padding: 1rem;
+            }
+        }
+    }
+    nav {
+        & h3 {
+            text-align: center;
+        }
+        & .bloc-func {
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size: 0.8rem;
+            &__link {
+                width: 29%;
+                & .link-number {
+                    top: -10%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+    #restaurants {
+        & h3 {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        & .bloc-rest {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-bottom: 2rem;
+            &__link {
+                width: 40%;
+                height: 300px;
+                margin: 0;
+                margin-bottom: 2rem;
+                &-desc {
+                    & p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 0;
+        & > p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        & .footer-link {
+            display: flex;
+            justify-content: space-evenly;
+            padding-right: 1rem;
+            & a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1023px) {
+    header {
+        .header__title {
+            height: 100px;
+            flex-direction: row;
+            align-items: center;
+            & h1 {
+                font-size: 1.6rem;
+                margin-top: 2.5rem;
+            }
+            & h2 {
+                padding: 1rem;
+            }
+        }
+    }
+    nav {
+        & h3 {
+            text-align: center;
+        }
+        & .bloc-func {
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size: 0.8rem;
+            &__link {
+                width: 29%;
+                font-size: 1.2rem;
+                & .link-number {
+                    font-size: 1rem;
+                    padding: .3rem;
+                    top: -10%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+    #restaurants {
+        & h3 {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        & .bloc-rest {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-bottom: 2rem;
+            &__link {
+                width: 20%;
+                height: 300px;
+                margin: 0;
+                margin-bottom: 2rem;
+                &-desc {
+                    & p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 0;
+        & > p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        & .footer-link {
+            display: flex;
+            justify-content: space-evenly;
+            padding-right: 1rem;
+            & a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
