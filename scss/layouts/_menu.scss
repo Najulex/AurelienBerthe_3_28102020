@@ -5,11 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     & a {
         color: black;
         font-size: 1.2rem;
         & i {
-            margin-left: -4.6rem;
+            position: absolute;
+            top: 40%;
+            left: 5%;
         }
     }
     & p {
@@ -32,7 +35,7 @@
 /*menu*/
 
 main {
-    margin-top: 14rem;
+    margin-top: 60%;
     border-radius: 2rem 2rem 0 0;
     background-color: $clr-bg-light;
     padding: 1rem;
@@ -85,7 +88,7 @@ main {
         }
         & :hover {
             & .menu__link-price {
-                animation: price-grow 500ms alternate forwards;
+                animation: price-grow 700ms alternate both;
             }
             & .menu__link-valid {
                 transform: translateX(0);
@@ -128,7 +131,7 @@ main {
                 text-overflow: ellipsis;
             }
             &-price {
-                width: 15%;
+                width: 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;

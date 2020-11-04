@@ -71,10 +71,18 @@
 }
 @keyframes price-grow {
     from {
-        width: 15%;
+        width: 2rem;
     }
     to {
-        width: 40%;
+        width: 8rem;
+    }
+}
+@keyframes price-grow-big-screen {
+    from {
+        width: 4rem;
+    }
+    to {
+        width: 10rem;
     }
 }
 @keyframes menu-display {
