@@ -78,17 +78,25 @@
                     z-index: 2;
                     cursor: pointer;
                     & :hover + .fas {
-                        animation: heart-fulling 500ms forwards;
+                        animation: heart-fulling 1s forwards;
                         transform-origin: bottom center;
+                    }
+                    & .far {
+                        position: relative;
+                        z-index: 3;
                     }
                     & .fa-heart {
                         font-size: 2rem;
                     }
                     & .fas {
-                        z-index: -1;
+                        z-index: 1;
+                        font-size: 1.8rem;
+                        transform: scale(0);
                         position: absolute;
-                        left: 0;
-                        color: #FFF;
+                        left: .1rem;
+                        bottom: .2rem;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
             }

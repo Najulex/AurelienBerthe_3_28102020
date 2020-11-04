@@ -53,3 +53,10 @@
     border-bottom: 2px solid $clr-primary;
     width: 50%;
 }
+
+/*raccourcir texte menu*/
+@mixin menu-text-shorten {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
