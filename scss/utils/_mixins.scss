@@ -1,3 +1,4 @@
+/*etiquette nouveau sur les restaurants*/
 @mixin new-patch {
     position: absolute;
     z-index: 2;
@@ -9,6 +10,8 @@
     padding: 0.5rem;
     color: darken($color: $clr-tertiary, $amount: 40);
 }
+
+/*image d'illustration des restos dans page d'accueil*/
 @mixin img {
     position: absolute;
     width: 100%;
@@ -20,6 +23,8 @@
     transition: 2s;
     transition-timing-function: ease-out;
 }
+
+/*changement background bouton d'ancrage*/
 @mixin btn-anim {
     content: "";
     position: absolute;
@@ -30,8 +35,21 @@
     z-index: -1;
     opacity: 0;
 }
+
+/**/
 @mixin txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/*habillage des titres de section pour grand écran*/
+@mixin section-title-desktop {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $clr-primary;
+    width: 50%;
 }

@@ -1,3 +1,4 @@
+/*remplissage du coeur favori*/
 @keyframes heart-fulling {
     0% {
         transform: scale(0);    
@@ -26,6 +27,8 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+/*loading-spinner page d'acceuil*/
 @keyframes ldg-spin {
     0% {
         transform: scale(.4);
@@ -36,6 +39,8 @@
         opacity: 100%;
     }
 }
+
+/*background semi-transparent du loading spinner*/
 @keyframes ldg-bg {
     0% {
         z-index: 4;
@@ -52,6 +57,8 @@
         opacity: 0;
     }
 }
+
+/*background des div de fonctionnement*/
 @keyframes func-change {
     0% {
         transform: scaleX(0);
@@ -61,6 +68,8 @@
         transform: scaleX(1);
     }
 }
+
+/*background du bouton d'ancrage*/
 @keyframes btn-change {
     from {
         opacity: 0;
@@ -69,6 +78,8 @@
         opacity: 1;
     }
 }
+
+/*agrandissement de la div du prix des menus*/
 @keyframes price-grow {
     from {
         width: 2rem;
@@ -77,6 +88,8 @@
         width: 8rem;
     }
 }
+
+/*agrandissement de la div du prix des menus pour grand écran*/
 @keyframes price-grow-big-screen {
     from {
         width: 4rem;
@@ -85,6 +98,8 @@
         width: 10rem;
     }
 }
+
+/*apparition de l'icone de validation dans les menus*/
 @keyframes menu-display {
     0% {
         opacity: 0%;

@@ -1,3 +1,5 @@
+/*mis en forme menu*/
+
 /*en-tête*/
 
 .header-menu {
@@ -39,6 +41,7 @@ main {
     border-radius: 2rem 2rem 0 0;
     background-color: $clr-bg-light;
     padding: 1rem;
+    padding-bottom: 4rem;
     & .rest-name {
         display: flex;
         justify-content: space-between;
@@ -75,11 +78,22 @@ main {
 }
 .bloc-menu {
     & .menu {
+        & > :nth-child(1) {
+            animation: menu-display 2s ease-out;
+        }
+        & > :nth-child(2) {
+            animation: menu-display 2s 400ms ease-out both;
+        }
+        & > :nth-child(3) {
+            animation: menu-display 2s 800ms ease-out both;
+        }
+        & > :nth-child(4) {
+            animation: menu-display 2s 1200ms ease-out both;
+        }
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
         & h2 {
-            animation: menu-display 2s ease-out;
             font-size: 1rem;
             border-bottom: 2px solid $clr-tertiary;
             padding-bottom: 0.6rem;
@@ -100,7 +114,6 @@ main {
             }
         }
         &__link {
-            animation: menu-display 2.5s ease-out;
             width: 100%;
             cursor: pointer;
             border-radius: 1rem;

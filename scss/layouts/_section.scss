@@ -1,9 +1,8 @@
-@import "../utils/mixins";
-@import "../utils/variables";
-@import "../utils/keyframes";
+/*section choix du restaurant*/
 
 #restaurants {
     background: lighten($color: $clr-bg, $amount: 7%);
+    padding-bottom: 4rem;
     & h3 {
         font-weight: bold;
         font-size: 1.6rem;
