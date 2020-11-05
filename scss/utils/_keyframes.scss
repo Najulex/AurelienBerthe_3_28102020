@@ -69,26 +69,6 @@
     }
 }
 
-/*agrandissement de la div du prix des menus*/
-@keyframes price-grow {
-    from {
-        width: 2rem;
-    }
-    to {
-        width: 8rem;
-    }
-}
-
-/*agrandissement de la div du prix des menus pour grand écran*/
-@keyframes price-grow-big-screen {
-    from {
-        width: 4rem;
-    }
-    to {
-        width: 10rem;
-    }
-}
-
 /*apparition de l'icone de validation dans les menus*/
 @keyframes menu-display {
     0% {
