@@ -104,7 +104,7 @@ main {
         }
         & :hover {
             & .menu__link-price {
-                animation: price-grow 700ms alternate both;
+                width: 8rem;
             }
             & .menu__link-valid {
                 transform: translateX(0);
@@ -149,6 +149,7 @@ main {
             }
             &-price {
                 width: 2rem;
+                transition: width 700ms;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
