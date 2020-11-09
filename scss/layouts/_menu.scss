@@ -80,21 +80,51 @@ main {
 }
 .bloc-menu {
     & .menu {
-        & > :nth-child(1) {
-            animation: menu-display 2s ease-out;
-        }
-        & > :nth-child(2) {
-            animation: menu-display 2s 400ms ease-out both;
-        }
-        & > :nth-child(3) {
-            animation: menu-display 2s 800ms ease-out both;
-        }
-        & > :nth-child(4) {
-            animation: menu-display 2s 1200ms ease-out both;
-        }
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
+        &__entrees {
+            & > :nth-child(1) {
+                animation: menu-display 2s ease-out both;
+            }
+            & > :nth-child(2) {
+                animation: menu-display 2s ease-out both;
+            }
+            & > :nth-child(3) {
+                animation: menu-display 2s 400ms ease-out both;
+            }
+            & > :nth-child(4) {
+                animation: menu-display 2s 800ms ease-out both;
+            }
+        }
+        &__plats {
+            & > :nth-child(1) {
+                animation: menu-display 2s 1200ms ease-out both;
+            }
+            & > :nth-child(2) {
+                animation: menu-display 2s 1200ms ease-out both;
+            }
+            & > :nth-child(3) {
+                animation: menu-display 2s 1400ms ease-out both;
+            }
+            & > :nth-child(4) {
+                animation: menu-display 2s 1800ms ease-out both;
+            }
+        }
+        &__desserts {
+            & > :nth-child(1) {
+                animation: menu-display 2s 2200ms ease-out both;
+            }
+            & > :nth-child(2) {
+                animation: menu-display 2s 2200ms ease-out both;
+            }
+            & > :nth-child(3) {
+                animation: menu-display 2s 2600ms ease-out both;
+            }
+            & > :nth-child(4) {
+                animation: menu-display 2s 3000ms ease-out both;
+            }
+        }
         & h2 {
             font-size: 1rem;
             border-bottom: 2px solid $clr-tertiary;
