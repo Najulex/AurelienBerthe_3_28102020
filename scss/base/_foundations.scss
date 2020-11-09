@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: ldg-bg 2s ease-in forwards;
+    animation: ldg-bg 1900ms ease-in forwards;
     &--text {
         width: 100%;
         font-weight: bold;
@@ -31,14 +31,14 @@
     &--text1 {
         background-color: $clr-tertiary-light;
         color: $clr-primary;
-        animation: ldg-text-right 1800ms 100ms both;
+        animation: ldg-text-right 2000ms both;
         align-items: flex-end;
         padding-bottom: 3rem;
     }
     &--text2 {
         background-color: $clr-primary-light;
         color: $clr-tertiary;
-        animation: ldg-text-left 1800ms 100ms both;
+        animation: ldg-text-left 2000ms both;
         padding-top: 3rem;
     }
     & .load-spin {
