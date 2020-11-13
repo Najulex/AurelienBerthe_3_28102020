@@ -36,13 +36,6 @@
     opacity: 0;
 }
 
-/**/
-@mixin txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /*habillage des titres de section pour grand écran*/
 @mixin section-title-desktop {
     text-align: center;

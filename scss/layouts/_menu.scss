@@ -214,9 +214,9 @@ main {
     width: 200px;
     height: 40px;
     opacity: 1;
-    transition: all 600ms;
     :hover {
         opacity: 0.8;
+        transition: opacity 600ms;
     }
     & a {
         background: linear-gradient($clr-secondary, $clr-primary);
